@@ -5,38 +5,45 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Tagmeo</title>
-        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/manifest.json">
+        <link rel="stylesheet" href="assets/css/prism.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
+        <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="manifest.json">
         <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
         <style>
             html, body {
                 margin: 0px;
                 border: 0px;
-                padding: 0px;
+                padding: 20px 40px 0px 40px;
+                font-family: "Source Sans Pro";
+            }
+
+            article {
+                margin: 0 auto;
             }
 
             a {
                 width: 512px;
                 height: 512px;
-                margin: 80px auto 40px auto;
+                margin: 0px auto 40px auto;
                 display: block;
                 opacity: 0.9;
                 text-indent: -50000px;
-                background: url("/assets/img/logo-512x512.png") no-repeat;
+                background: url("assets/img/logo-512x512.png") no-repeat;
             }
 
             a:hover {
@@ -47,5 +54,14 @@
     </head>
     <body>
         <a href="https://github.com/tagmeo/tagmeo">Tagmeo</a>
+        <article>
+            <h2>Step 1</h2>
+            <pre class="language-bash"><code>composer global require tagmeo/installer</code></pre>
+            <h2>Step 2</h2>
+            <pre class="language-bash"><code>tagmeo new &lt;project_name&gt;</code></pre>
+            <h2>Step 3</h2>
+            <pre class="language-bash"><code>cd &lt;project_name&gt; &amp;&amp; php tagmeo setup</code></pre>
+        </article>
+        <script src="assets/js/prism.js"></script>
     </body>
 </html>
